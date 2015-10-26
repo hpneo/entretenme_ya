@@ -38,6 +38,7 @@ GEM
       tzinfo (~> 1.1)
     arel (6.0.3)
     bcrypt (3.1.10)
+    bcrypt (3.1.10-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -81,7 +82,10 @@ GEM
     minitest (5.8.1)
     multi_json (1.11.2)
     mysql2 (0.3.20)
+    mysql2 (0.3.20-x86-mingw32)
     nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+    nokogiri (1.6.6.2-x86-mingw32)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     rack (1.6.4)
@@ -138,6 +142,8 @@ GEM
     tilt (2.0.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2015.7)
+      tzinfo (>= 1.0.0)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -151,6 +157,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   byebug
@@ -164,5 +171,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
+  tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
