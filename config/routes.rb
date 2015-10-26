@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   get '/profile/edit/:id' => 'profile#edit'
   #Redirige peticion UPDATE a controlador PROFILE
   post '/profile/update' => 'profile#update'
-
+  
+  get '/users/sign_in'=> 'devise/sessions#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
