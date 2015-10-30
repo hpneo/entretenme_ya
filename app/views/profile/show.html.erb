@@ -1,0 +1,9 @@
+<h1 class="header center light-blue-text">
+	Editar Perfil
+</h1>
+
+<h5 class="header col s12 light">
+	<p>ID: <%= @user.id %></p>
+	<p>Email: <%= @user.email %></p>
+</h5>
+<%= link_to "Editar datos", "/profile/edit/#{@user.id}" %>
