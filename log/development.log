@@ -40,3 +40,798 @@ Processing by ProfileController#edit as HTML
   [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
   Rendered profile/edit.html.erb within layouts/application (1.0ms)
 Completed 200 OK in 139ms (Views: 137.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/media" for ::1 at 2015-11-01 15:51:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (77.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3852ms (Views: 3851.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 15:51:56 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-01 15:51:56 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 15:51:56 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2015-11-01 15:51:56 -0500
+
+
+Started GET "/media" for 127.0.0.1 at 2015-11-01 15:52:07 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for 127.0.0.1 at 2015-11-01 15:52:07 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 15:52:07 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 15:52:07 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2015-11-01 15:52:07 -0500
+
+
+Started GET "/media" for 127.0.0.1 at 2015-11-01 15:52:14 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for 127.0.0.1 at 2015-11-01 15:52:14 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 15:52:14 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 15:52:14 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2015-11-01 15:52:14 -0500
+
+
+Started GET "/media" for 127.0.0.1 at 2015-11-01 15:52:36 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for 127.0.0.1 at 2015-11-01 15:52:36 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 15:52:36 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 15:52:36 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2015-11-01 15:52:36 -0500
+
+
+Started GET "/media" for 127.0.0.1 at 2015-11-01 15:52:39 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for 127.0.0.1 at 2015-11-01 15:52:39 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 15:52:39 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 15:52:39 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2015-11-01 15:52:39 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 15:55:58 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 15:55:58 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 15:55:58 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 15:55:58 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 15:55:58 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 15:58:26 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 15:58:26 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 15:58:26 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 15:58:27 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 15:58:27 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:00:33 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:00:33 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:00:33 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:00:33 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:00:33 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:00:40 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:00:40 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:00:40 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:00:40 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:00:40 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:00:44 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:00:44 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:00:44 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:00:44 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:00:44 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:05:14 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:05:55 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:05:55 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:05:55 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:05:55 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:05:55 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:06:19 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:06:19 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:06:19 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:06:19 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:06:19 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:07:02 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:07:02 -0500
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:07:02 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:07:02 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:07:02 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:07:08 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:07:08 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:07:08 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:07:08 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:07:08 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:07:18 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:07:18 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:07:18 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:07:18 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:07:18 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:10:02 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:10:02 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:10:02 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:10:02 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:10:02 -0500
+
+
+Started GET "/media" for ::1 at 2015-11-01 16:13:40 -0500
+Processing by MediaController#index as HTML
+  Rendered media/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:13:40 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:13:40 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:13:40 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:13:40 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:13:45 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:14:06 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:14:06 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:14:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:14:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:14:06 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:14:43 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:14:43 -0500
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:14:43 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:14:43 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:14:43 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:14:46 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:14:46 -0500
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:14:46 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:14:46 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:14:46 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:14:57 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:14:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:14:57 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:14:57 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:14:57 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:15:05 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:15:06 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:15:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:15:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:15:06 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:15:12 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:15:12 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:15:12 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:15:12 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:15:12 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:15:42 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:15:42 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:15:42 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:15:42 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:15:42 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:16:57 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:16:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:16:57 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:16:57 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:16:57 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:17:06 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:17:06 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:17:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:17:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:17:06 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:23:00 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:23:00 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:23:00 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:23:00 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:23:01 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:24:46 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:24:46 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:24:46 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:24:46 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:24:46 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:24:53 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:24:53 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:24:53 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:24:53 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:24:53 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:25:08 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:25:08 -0500
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:25:08 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:25:08 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:25:08 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:25:28 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:25:28 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:25:28 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:25:28 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:25:28 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:27:51 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:27:51 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:27:51 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:27:52 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:27:52 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:28:09 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:28:09 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:28:09 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:28:09 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:28:09 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:28:23 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:28:23 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:28:23 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:28:23 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:28:23 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:31:00 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:31:00 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:31:00 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:31:01 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:31:01 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:31:24 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:31:24 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:31:24 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:31:25 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:31:25 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:31:35 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:31:35 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:31:35 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:31:35 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:31:35 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:31:51 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:31:51 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:31:51 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:31:51 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:31:51 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:31:57 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:31:58 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:31:58 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:31:58 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:31:58 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:32:06 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:32:06 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:32:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:32:06 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:32:06 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:32:12 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:32:12 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:32:12 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:32:13 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:32:13 -0500
+
+
+Started GET "/media/1" for ::1 at 2015-11-01 16:32:22 -0500
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered media/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize.self-7047f514ebd4fd1975201aef4b17648139d03e4ff4d11446f086e728c42ee48c.css?body=1" for ::1 at 2015-11-01 16:32:22 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-01 16:32:22 -0500
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-11-01 16:32:22 -0500
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-11-01 16:32:22 -0500

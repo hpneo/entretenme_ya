@@ -1,16 +1,19 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root 'home#index'
-
   #Redirige peticion SHOW a controlador PROFILE
   get '/profile/show/:id' => 'profile#show'
   #Redirige peticion EDIT a controlador PROFILE
   get '/profile/edit/:id' => 'profile#edit'
   #Redirige peticion UPDATE a controlador PROFILE
   post '/profile/update' => 'profile#update'
-  
+
   get '/users/sign_in'=> 'devise/sessions#new'
+
+  get '/media' => 'media#index'
+  get '/media/:id' => 'media#show'
+
+  root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
