@@ -13,6 +13,20 @@ Rails.application.routes.draw do
   get '/media' => 'media#index'
   get '/media/:id' => 'media#show'
 
+  #Redirige peticion NEW a controlador COMMENT
+  get '/comment/new/:content_id' => 'comment#new'
+  #Redirige peticion CREATE a controlador COMMENT
+  post '/comment/create' => 'comment#create'
+  #Redirige peticion LIST a controlador COMMENT
+  get '/comment/list' => 'comment#list'
+  #Redirige peticion CREATE a controlador FAVORITE
+  get '/favorite/create' => 'favorite#create'
+  #Redirige peticion NEW a controlador REVIEW
+  get '/review/new/:content_id' => 'review#new'
+  #Redirige peticion CREATE a controlador REVIEW
+  post '/review/create' => 'review#create'
+
+
   root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  year: 
+  description: MyString
+  poster: MyString
+  trailer: MyString
+  score: 1.5
+  country: MyString
+
+two:
+  name: MyString
+  year: 
+  description: MyString
+  poster: MyString
+  trailer: MyString
+  score: 1.5
+  country: MyString
