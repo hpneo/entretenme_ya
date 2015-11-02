@@ -4334,3 +4334,127 @@ Processing by ProfileController#edit as HTML
   [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
   Rendered profile/edit.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateContents (20151102061237)
+  [1m[35m (243.5ms)[0m  CREATE TABLE `contents` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `year` int(11), `description` varchar(255), `poster` varchar(255), `trailer` varchar(255), `score` float, `country` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (24.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151102061237')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20151102061721)
+  [1m[35m (345.7ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `content_id` int(11), `user_id` int(11), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_comments_on_content_id`  (`content_id`) ,  INDEX `index_comments_on_user_id`  (`user_id`) ) ENGINE=InnoDB
+  [1m[36m (294.8ms)[0m  [1mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_8895933a2a`
+FOREIGN KEY (`content_id`)
+  REFERENCES `contents` (`id`)
+[0m
+  [1m[35m (202.7ms)[0m  ALTER TABLE `comments` ADD CONSTRAINT `fk_rails_03de2dc08c`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151102061721')
+  [1m[36m (37.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFavorites (20151102070512)
+  [1m[35m (219.5ms)[0m  CREATE TABLE `favorites` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `content_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_favorites_on_user_id`  (`user_id`) ,  INDEX `index_favorites_on_content_id`  (`content_id`) ) ENGINE=InnoDB
+  [1m[36m (341.4ms)[0m  [1mALTER TABLE `favorites` ADD CONSTRAINT `fk_rails_d15744e438`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (276.1ms)[0m  ALTER TABLE `favorites` ADD CONSTRAINT `fk_rails_615f1714a4`
+FOREIGN KEY (`content_id`)
+  REFERENCES `contents` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151102070512')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReviews (20151102071450)
+  [1m[35m (169.8ms)[0m  CREATE TABLE `reviews` (`id` int(11) auto_increment PRIMARY KEY, `content_id` int(11), `user_id` int(11), `body` text, `score` float, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reviews_on_content_id`  (`content_id`) ,  INDEX `index_reviews_on_user_id`  (`user_id`) ) ENGINE=InnoDB
+  [1m[36m (207.0ms)[0m  [1mALTER TABLE `reviews` ADD CONSTRAINT `fk_rails_f411f0a5a0`
+FOREIGN KEY (`content_id`)
+  REFERENCES `contents` (`id`)
+[0m
+  [1m[35m (200.9ms)[0m  ALTER TABLE `reviews` ADD CONSTRAINT `fk_rails_74a66bd6c5`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151102071450')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddContentTypeToContents (20151102180453)
+  [1m[35m (320.0ms)[0m  ALTER TABLE `contents` ADD `content_type` varchar(255)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151102180453')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePendings (20151102180651)
+  [1m[35m (201.6ms)[0m  CREATE TABLE `pendings` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `content_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_pendings_on_user_id`  (`user_id`) ,  INDEX `index_pendings_on_content_id`  (`content_id`) ) ENGINE=InnoDB
+  [1m[36m (217.0ms)[0m  [1mALTER TABLE `pendings` ADD CONSTRAINT `fk_rails_e5a627ff19`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (234.0ms)[0m  ALTER TABLE `pendings` ADD CONSTRAINT `fk_rails_f2f98b4220`
+FOREIGN KEY (`content_id`)
+  REFERENCES `contents` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151102180651')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (27.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'entretenme_ya_development'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'entretenme_ya_development'
+  AND fk.table_name = 'contents'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `contents`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'entretenme_ya_development'
+  AND fk.table_name = 'favorites'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `favorites`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'entretenme_ya_development'
+  AND fk.table_name = 'pendings'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `pendings`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'entretenme_ya_development'
+  AND fk.table_name = 'reviews'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `reviews`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'entretenme_ya_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`

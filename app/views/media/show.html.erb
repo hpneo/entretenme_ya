@@ -25,5 +25,18 @@
     <div class="video-container no-controls">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ej3ioOneTy8" frameborder="0" allowfullscreen></iframe>
     </div>
+
+    <h5 class="header center light-blue-text">
+    	Nuevo Comentario
+    </h5>
+
+    <%= form_tag("/comment/create", method: "post") do %>
+    	<h5 class="header col s12 light">
+    		<%= hidden_field_tag(:content_id, @content_id) %>
+    		<p>Comentario</p>
+    		<%= text_area_tag(:body) %>
+    		<%= submit_tag("Crear comentario") %>
+    	</h5>
+    <% end %>
   </div>
 </div>
