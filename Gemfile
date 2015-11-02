@@ -44,4 +44,5 @@ end
 gem 'devise'
 gem 'materialize-sass'
 gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
-gem 'shareable' 
+gem 'shareable'
+gem 'ratyrate'
