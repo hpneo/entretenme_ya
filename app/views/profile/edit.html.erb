@@ -1,0 +1,12 @@
+<h1 class="header center light-blue-text">
+	Editar Perfil
+</h1>
+
+<%= form_tag("/profile/update", method: "post") do %>
+	<h5 class="header col s12 light">
+		<%= hidden_field_tag(:id, @user.id) %>
+		<p>Email</p>
+		<%= text_field_tag(:email, @user.email) %>
+		<%= submit_tag("Actualizar") %>
+	</h5>
+<% end %>
