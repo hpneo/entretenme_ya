@@ -10,8 +10,7 @@ Rails.application.routes.draw do
 
   get '/users/sign_in'=> 'devise/sessions#new'
 
-  get '/media' => 'media#index'
-  get '/media/:id' => 'media#show'
+  resources :contents
 
   #Redirige peticion NEW a controlador COMMENT
   get '/comment/new/:content_id' => 'comment#new'
