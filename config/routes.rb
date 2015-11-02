@@ -10,15 +10,21 @@ Rails.application.routes.draw do
 
   get '/users/sign_in'=> 'devise/sessions#new'
 
-  get '/media' => 'media#index'
-  get '/media/:id' => 'media#show'
-  devise_scope :user do 
-  get "/users/sign_out", to: "devise/sessions#destroy"
-  end
+  resources :contents
 
- authenticated :user do
-    root to: 'media#index', as: :authenticated_root
-  end
+  #Redirige peticion NEW a controlador COMMENT
+  get '/comment/new/:content_id' => 'comment#new'
+  #Redirige peticion CREATE a controlador COMMENT
+  post '/comment/create' => 'comment#create'
+  #Redirige peticion LIST a controlador COMMENT
+  get '/comment/list' => 'comment#list'
+  #Redirige peticion CREATE a controlador FAVORITE
+  get '/favorite/create' => 'favorite#create'
+  #Redirige peticion NEW a controlador REVIEW
+  get '/review/new/:content_id' => 'review#new'
+  #Redirige peticion CREATE a controlador REVIEW
+  post '/review/create' => 'review#create'
+
 
   root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.

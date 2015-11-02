@@ -1,0 +1,14 @@
+<h1 class="header center light-blue-text">
+	Nueva Reseña
+</h1>
+
+<%= form_tag("/comment/create", method: "post") do %>
+	<h5 class="header col s12 light">
+		<%= hidden_field_tag(:content_id, @content_id) %>
+		<p>Reseña</p>
+		<%= text_area_tag(:body) %>
+		<p>Puntaje</p>
+		<%= text_field_tag(:score) %>
+		<%= submit_tag("Crear reseña") %>
+	</h5>
+<% end %>
