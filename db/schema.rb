@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151102185424) do
+ActiveRecord::Schema.define(version: 20151108202015) do
 
   create_table "average_caches", force: :cascade do |t|
     t.integer  "rater_id",      limit: 4
@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 20151102185424) do
     t.string   "description",  limit: 255
     t.string   "poster",       limit: 255
     t.string   "trailer",      limit: 255
-    t.float    "score",        limit: 24
     t.string   "country",      limit: 255
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -98,12 +97,6 @@ ActiveRecord::Schema.define(version: 20151102185424) do
   end
 
   add_index "rating_caches", ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type", using: :btree
-
-  create_table "ratings", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
 
   create_table "reviews", force: :cascade do |t|
     t.integer  "content_id", limit: 4
