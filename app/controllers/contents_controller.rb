@@ -5,6 +5,8 @@ class ContentsController < ApplicationController
 
   def show
     @content = Content.find(params[:id])
+  rescue
+    redirect_to contents_path
   end
 
   def search
