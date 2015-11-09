@@ -9,8 +9,7 @@ Rails.application.routes.draw do
   #Redirige peticion UPDATE a controlador PROFILE
   post '/profile/update' => 'profile#update'
 
-  get '/users/sign_in'=> 'devise/sessions#new'
-
+  
   resources :contents do
     collection do
       get :search
