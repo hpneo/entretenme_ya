@@ -1,5 +1,6 @@
 class ContentsController < ApplicationController
   def index
+    @contents = Content.last(12)
   end
 
   def show
