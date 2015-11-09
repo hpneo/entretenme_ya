@@ -12,5 +12,16 @@
  *
  *= require materialize
  *= require_self
- 
+
  */
+
+.share {
+  padding: 0 20px;
+}
+
+.share > div {
+  display: inline-block;
+  vertical-align: middle;
+  height: 22px;
+  line-height: 20px;
+}
