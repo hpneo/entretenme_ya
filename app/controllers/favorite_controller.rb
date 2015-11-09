@@ -7,9 +7,9 @@ class FavoriteController < ApplicationController
 			@favorite = Favorite.where(user_id: @user_id, content_id: @content_id)
 			if @favorite.blank?
 				@favorite = Favorite.new(user_id: @user_id, content_id: @content_id)
-				@favorite.save					
+				@favorite.save
 			end
-			redirect_to '/media/show'
+			redirect_to '/contents/' + @content_id
 		else
 			redirect_to '/home'
 		end

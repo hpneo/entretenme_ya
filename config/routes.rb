@@ -27,6 +27,8 @@ Rails.application.routes.draw do
   get '/comment/list' => 'comment#list'
   #Redirige peticion CREATE a controlador FAVORITE
   get '/favorite/create' => 'favorite#create'
+  #Redirige peticion CREATE a controlador PENDING
+  get '/pending/create' => 'pending#create'
   #Redirige peticion NEW a controlador REVIEW
   get '/review/new/:content_id' => 'review#new'
   #Redirige peticion CREATE a controlador REVIEW
