@@ -20,6 +20,16 @@ class Content < ActiveRecord::Base
               content.poster = [TMDB_CONFIGURATION[:base_url], TMDB_CONFIGURATION[:poster_sizes].last, movie.poster_path].join
               content.content_type = 'movie'
               content.remote_id = movie.id
+
+              trailers = Tmdb::Search.new("/#{Tmdb::Movie.endpoints[:singular]}/#{Tmdb::Movie.endpoint_id + movie.id.to_s}/videos").fetch_response
+
+              if trailers && trailers['results']
+                trailer = trailers['results'].first
+
+                if trailer && trailer['site'] == 'YouTube'
+                  content.trailer_id = trailer['key']
+                end
+              end
             end
           end
         }.compact
@@ -34,6 +44,16 @@ class Content < ActiveRecord::Base
               content.country = tv_show.origin_country.first
               content.content_type = 'tv_show'
               content.remote_id = tv_show.id
+
+              trailers = Tmdb::Search.new("/#{Tmdb::TV.endpoints[:singular]}/#{Tmdb::TV.endpoint_id + tv_show.id.to_s}/videos").fetch_response
+
+              if trailers && trailers['results']
+                trailer = trailers['results'].first
+
+                if trailer && trailer['site'] == 'YouTube'
+                  content.trailer_id = trailer['key']
+                end
+              end
             end
           end
         }.compact
@@ -53,6 +73,10 @@ class Content < ActiveRecord::Base
               content.poster = videogame.image['super_url'] || videogame.image['medium_url']
               content.content_type = 'videogame'
               content.remote_id = videogame.id
+
+              if videogame.videos && videogame.videos.any? && videogame.videos.first.youtube_id
+                content.trailer_id = videogame.videos.first.youtube_id
+              end
             end
           end
         }.compact

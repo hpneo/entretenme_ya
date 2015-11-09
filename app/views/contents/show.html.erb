@@ -3,7 +3,7 @@
   <div class="col s3">
     <div class="card">
       <div class="card-image">
-        <img src="https://image.tmdb.org/t/p/w396/5aGhaIHYuQbqlHWvWYqMCnj40y2.jpg">
+        <img src="<%= @content.poster %>">
       </div>
     </div>
 
@@ -28,9 +28,11 @@
       <%= @content.description %>
     </div>
 
-    <div class="video-container no-controls">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ej3ioOneTy8" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <% if @content.trailer_id.present? %>
+      <div class="video-container no-controls">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @content.trailer_id %>" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <% end %>
 
     <div class="row">
       <%= render_shareable %>
