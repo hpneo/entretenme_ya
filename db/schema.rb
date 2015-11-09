@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108220031) do
+ActiveRecord::Schema.define(version: 20151109015831) do
 
   create_table "average_caches", force: :cascade do |t|
     t.integer  "rater_id",      limit: 4
@@ -36,14 +36,14 @@ ActiveRecord::Schema.define(version: 20151108220031) do
   create_table "contents", force: :cascade do |t|
     t.string   "name",         limit: 255
     t.integer  "year",         limit: 4
-    t.string   "description",  limit: 255
     t.string   "poster",       limit: 255
     t.string   "trailer",      limit: 255
     t.string   "country",      limit: 255
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.string   "content_type", limit: 255
     t.integer  "remote_id",    limit: 4
+    t.text     "description",  limit: 65535
   end
 
   create_table "favorites", force: :cascade do |t|

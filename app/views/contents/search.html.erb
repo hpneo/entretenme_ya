@@ -1,0 +1,12 @@
+<h4 class="header light red-text text-lighten-2">Buscar</h4>
+
+<div class="row">
+  <form class="input-field col s12">
+    <input placeholder="Ingrese un nombre" name="term" type="text" value="<%= @term %>">
+    <input type="hidden" name="content_type" value="<%= @content_type %>">
+  </form>
+</div>
+
+<% if @results.present? %>
+  <%= render "grid", contents: @results %>
+<% end %>

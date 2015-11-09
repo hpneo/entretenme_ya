@@ -1,0 +1,19 @@
+<% contents.in_groups_of(4, false) do |group| %>
+  <div class="row">
+    <% group.each do |content| %>
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image">
+            <img src="<%= content.poster %>">
+            <span class="card-title"><%= content.name %></span>
+          </div>
+          <div class="card-action">
+            <% if content.persisted? %>
+              <a href="<%= content_path(content) %>">+ Info</a>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

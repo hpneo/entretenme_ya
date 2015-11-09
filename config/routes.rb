@@ -11,7 +11,13 @@ Rails.application.routes.draw do
 
   get '/users/sign_in'=> 'devise/sessions#new'
 
-  resources :contents
+  resources :contents do
+    collection do
+      get :search
+    end
+  end
+
+  get '/:content_type/search' => 'contents#search'
 
   #Redirige peticion NEW a controlador COMMENT
   get '/comment/new/:content_id' => 'comment#new'

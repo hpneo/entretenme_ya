@@ -49,3 +49,5 @@ gem 'ratyrate'
 
 gem 'giantbomb'
 gem 'themoviedb'
+
+gem 'suggestor'
