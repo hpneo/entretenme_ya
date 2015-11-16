@@ -11,7 +11,7 @@ class CommentController < ApplicationController
 			@body = params[:body]
 			@comment = Comment.new(content_id: @content_id, user_id: @user_id, body: @body)
 			@comment.save
-			redirect_to '/contents/' + @content_id
+			redirect_to '/contents/#{content_id}'
 		else
 			redirect_to '/home'
 		end
