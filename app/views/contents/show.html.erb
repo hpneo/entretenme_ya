@@ -25,7 +25,7 @@
   </div>
   <div class="col s9">
     <div class="row">
-      <%= @content.description %>
+      <%= raw @content.description.html_safe %>
     </div>
 
     <% if @content.trailer_id.present? %>
