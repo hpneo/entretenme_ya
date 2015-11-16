@@ -9,10 +9,10 @@ Rails.application.routes.draw do
   #Redirige peticion UPDATE a controlador PROFILE
   post '/profile/update' => 'profile#update'
 
-  
   resources :contents do
     collection do
       get :search
+      get :recommendations
     end
   end
 

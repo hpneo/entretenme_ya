@@ -19,4 +19,14 @@ class ContentsController < ApplicationController
       @results = []
     end
   end
+
+  def recommendations
+    @recommendations = User.all.inject({}) do |hash, user|
+      hash[user.email] = Rate.where(rater_id: user.id).inject({}) do |rate_hash, rate|
+        rate_hash[rate.rateable.name] = rate.stars
+        rate_hash
+      end
+      hash
+    end
+  end
 end
