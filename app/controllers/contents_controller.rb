@@ -23,15 +23,16 @@ class ContentsController < ApplicationController
   def recommendations
     data = User.all.inject({}) do |hash, user|
       hash[user.email] = Rate.where(rater_id: user.id).inject({}) do |rate_hash, rate|
-        rate_hash[rate.rateable.name] = rate.stars
+        rate_hash[rate.id] = rate.stars
         rate_hash
       end
       hash
     end
 
     suggestor = Suggestor::Suggestor.new(data)
-    # @recommendations = suggestor.recommended_to(current_user.email)
-    # @recommendations = suggestor.items_for_set(data[current_user.email].keys)
-    @recommendations = data.to_json
+    recommended_contents = suggestor.recommended_to(current_user.email)
+    recommended_contents_ids = recommended_contents.map { |item| item.first }
+
+    @recommendations = Content.where(id: recommended_contents_ids)
   end
 end
