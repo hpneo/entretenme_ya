@@ -30,6 +30,7 @@ class ContentsController < ApplicationController
     end
 
     suggestor = Suggestor::Suggestor.new(data)
-    @recommendations = suggestor.recommended_to(current_user.email)
+    # @recommendations = suggestor.recommended_to(current_user.email)
+    @recommendations = suggestor.items_for_set(data[current_user.email].keys)
   end
 end
