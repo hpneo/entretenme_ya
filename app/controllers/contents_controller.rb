@@ -13,6 +13,10 @@ class ContentsController < ApplicationController
     @term = params[:term]
     @content_type = params[:content_type].present? ? params[:content_type].singularize.to_sym : :movie
 
-    @results = Content.search(@term, @content_type)
+    if @term.present?
+      @results = Content.search(@term, @content_type)
+    else
+      @results = []
+    end
   end
 end
