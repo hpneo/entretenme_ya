@@ -30,8 +30,8 @@ class ContentsController < ApplicationController
     end
 
     suggestor = Suggestor::Suggestor.new(data)
-    recommended_contents = suggestor.recommended_to(current_user.email)
-    recommended_contents_ids = recommended_contents.map { |item| item.first }
+    @recommended_contents = suggestor.recommended_to(current_user.email)
+    recommended_contents_ids = @recommended_contents.map { |item| item.first }
 
     @recommendations = Content.where(id: recommended_contents_ids)
   end
