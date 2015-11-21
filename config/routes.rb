@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
 
+  get '/profile' => 'profile#current_show'
+  get '/profile/contents' => 'profile#contents'
+
   #Redirige peticion SHOW a controlador PROFILE
   get '/profile/show/:id' => 'profile#show'
   #Redirige peticion EDIT a controlador PROFILE

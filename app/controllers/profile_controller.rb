@@ -3,6 +3,10 @@ class ProfileController < ApplicationController
 		@user = User.find(params["id"])
 	end
 
+  def current_show
+    @user = current_user
+  end
+
 	def edit
 		@user = User.find(params["id"])
 	end
