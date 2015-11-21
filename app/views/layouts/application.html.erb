@@ -11,24 +11,16 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="/" class="brand-logo">Entreténme ya</a>
       <% if user_signed_in? %>
-        <li>
-          <div class="row up righ">
-            <a href="/profile"><%= current_user.email %></a>
-          </div>
-        </li>
-        <li>
-          <div class="row up righ">
-            <a href="/contents/search">Search</a>
-          </div>
-        </li>
-        <li>
-          <div class="row up righ">
-            <a href="/contents/recommendations">Recommendations</a>
-          </div>
-        </li>
-        <li>
-          <%= render 'devise/menu/login_items' %>
-        </li>
+        <div class="row up right">
+          <a href="/profile"><%= current_user.email %></a>
+        </div>
+        <div class="row up right">
+          <a href="/contents/search">Search</a>
+        </div>
+        <div class="row up right">
+          <a href="/contents/recommendations">Recommendations</a>
+        </div>
+        <%= render 'devise/menu/login_items' %>
       <% end %>
     </div>
   </nav>
