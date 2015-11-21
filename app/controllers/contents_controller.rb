@@ -23,7 +23,7 @@ class ContentsController < ApplicationController
   def recommendations
     data = User.all.inject({}) do |hash, user|
       hash[user.email] = Rate.where(rater_id: user.id).inject({}) do |rate_hash, rate|
-        rate_hash[rateable_id.id] = rate.stars
+        rate_hash[rate.rateable_id] = rate.stars
         rate_hash
       end
 
