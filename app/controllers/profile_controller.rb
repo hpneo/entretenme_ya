@@ -15,4 +15,8 @@ class ProfileController < ApplicationController
 		@user.save
 		redirect_to "/profile/show/#{@id}"
 	end
+
+  def contents
+    @contents = Rate.where(rater_id: user.id).map(&:rateable)
+  end
 end
