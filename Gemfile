@@ -52,3 +52,4 @@ gem 'giantbomb'
 gem 'themoviedb'
 
 gem 'suggestor'
+gem 'thin'
