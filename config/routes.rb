@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get '/profile' => 'profile#current_show'
   get '/profile/contents' => 'profile#contents'
+  get '/profile/suggested_users' => 'profile#suggested_users'
 
   #Redirige peticion SHOW a controlador PROFILE
   get '/profile/show/:id' => 'profile#show'
