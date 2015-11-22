@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.3.18'
+gem 'pg', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,4 +52,8 @@ gem 'giantbomb'
 gem 'themoviedb'
 
 gem 'suggestor'
+<<<<<<< HEAD
 gem 'activeadmin', github: 'activeadmin'
+=======
+gem 'thin'
+>>>>>>> 22d5dd52f12c085147478acae5d23445f46c7dc3

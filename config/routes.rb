@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
 
+  get '/profile' => 'profile#current_show'
+  get '/profile/contents' => 'profile#contents'
+  get '/profile/suggested_users' => 'profile#suggested_users'
+
   #Redirige peticion SHOW a controlador PROFILE
   get '/profile/show/:id' => 'profile#show'
   #Redirige peticion EDIT a controlador PROFILE
@@ -13,10 +17,10 @@ Rails.application.routes.draw do
   #Redirige peticion UPDATE a controlador PROFILE
   post '/profile/update' => 'profile#update'
 
-  
   resources :contents do
     collection do
       get :search
+      get :recommendations
     end
   end
 

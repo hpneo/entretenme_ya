@@ -7,13 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="red darken-1" role="navigation">
+  <nav class="red darken-1 nav-wrapper" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="/" class="brand-logo">Entreténme ya</a>
       <% if user_signed_in? %>
-        <li>
-          <%= render 'devise/menu/login_items' %>
-        </li>
+      <ul class="right">
+        <li><a href="/profile"><%= current_user.email %></a></li>
+        <li><a href="/contents/search">Search</a></li>
+        <li><a href="/contents/recommendations">Recommendations</a></li>
+        <%= render 'devise/menu/login_items' %>
+      </ul>
       <% end %>
     </div>
   </nav>
