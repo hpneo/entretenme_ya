@@ -1,0 +1,18 @@
+<% @users.in_groups_of(4, false) do |group| %>
+  <div class="row">
+    <% group.each do |user| %>
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image">
+            <span class="card-title"><%= user.email %></span>
+          </div>
+          <div class="card-action">
+            <% if user.persisted? %>
+              <a href="/profile/show/<%= user.id %>">+ Info</a>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

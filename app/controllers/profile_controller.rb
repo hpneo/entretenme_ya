@@ -9,6 +9,23 @@ class ProfileController < ApplicationController
     render "show"
   end
 
+  def suggested_users
+    data = User.all.inject({}) do |hash, user|
+      hash[user.email] = Rate.where(rater_id: user.id).inject({}) do |rate_hash, rate|
+        rate_hash[rate.rateable_id] = rate.stars
+        rate_hash
+      end
+
+      hash
+    end
+
+    suggestor = Suggestor::Suggestor.new(data)
+    similar_users = suggestor.similar_to(current_user.email)
+    similar_users_ids = similar_users.map { |item| item.first }
+
+    @users = User.where(email: similar_users_ids)
+  end
+
 	def edit
 		@user = User.find(params["id"])
 	end
