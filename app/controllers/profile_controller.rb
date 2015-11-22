@@ -5,6 +5,8 @@ class ProfileController < ApplicationController
 
   def current_show
     @user = current_user
+
+    render "show"
   end
 
 	def edit
@@ -17,7 +19,8 @@ class ProfileController < ApplicationController
 		@user = User.find(@id)
 		@user.email = @email;
 		@user.save
-		redirect_to "/profile/show/#{@id}"
+
+    redirect_to "/profile/show/#{@id}"
 	end
 
   def contents
