@@ -3,7 +3,10 @@ ActiveAdmin.register Report do
  index do
     column :user
     column :description
-    
-    default_actions
+    column :reason
+    column :reports_type
+   
+  
+ 
     end
 end

@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  get 'report/new'
+  post '/report/create' => 'report#create'
+
+
+  get '/report/new' => 'report#new'
 
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users

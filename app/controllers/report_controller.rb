@@ -6,8 +6,9 @@ class ReportController < ApplicationController
 			@description = params[:description]
 			@reason = params[:reason]
 			@reports_type = params[:reports_type]
-			@report = Report.new(report_id: @report_id, user_id: @user_id, description: @description, reason: @reason, reports_type: @reports_type)
+			@report = Report.new(user_id: @user_id, description: @description, reason: @reason, reports_type: @reports_type)
 			@report.save
+			redirect_to '/contents'
 
 		
 	end

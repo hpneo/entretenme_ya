@@ -52,8 +52,5 @@ gem 'giantbomb'
 gem 'themoviedb'
 
 gem 'suggestor'
-<<<<<<< HEAD
 gem 'activeadmin', github: 'activeadmin'
-=======
 gem 'thin'
->>>>>>> 22d5dd52f12c085147478acae5d23445f46c7dc3
