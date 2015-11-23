@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151116185756) do
+ActiveRecord::Schema.define(version: 20151123035054) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -132,6 +132,17 @@ ActiveRecord::Schema.define(version: 20151116185756) do
 
   add_index "rating_caches", ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type", using: :btree
 
+  create_table "report_users", force: :cascade do |t|
+    t.integer  "user_id",        limit: 4
+    t.string   "reason",         limit: 255
+    t.text     "description",    limit: 65535
+    t.string   "user_to_report", limit: 255
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
+
+  add_index "report_users", ["user_id"], name: "index_report_users_on_user_id", using: :btree
+
   create_table "reports", force: :cascade do |t|
     t.integer  "user_id",      limit: 4
     t.string   "reason",       limit: 255
@@ -179,6 +190,7 @@ ActiveRecord::Schema.define(version: 20151116185756) do
   add_foreign_key "favorites", "users"
   add_foreign_key "pendings", "contents"
   add_foreign_key "pendings", "users"
+  add_foreign_key "report_users", "users"
   add_foreign_key "reports", "users"
   add_foreign_key "reviews", "contents"
   add_foreign_key "reviews", "users"

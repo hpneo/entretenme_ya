@@ -1,0 +1,18 @@
+<h4 class="header light red-text text-lighten-2">Reportar usuarios</h4>
+
+ <%= form_tag("/report_user/create", method: "post") do %>
+    	<h5 class="header col s12 light">
+    	<h5 class="header col s12 light">
+    		<p>Nombre del usuario</p>
+    		<%= text_area_tag(:user_to_report) %>
+    		<p>Razon</p>
+    		<%= text_area_tag(:reason) %>
+    		<p>Descripcion</p>
+        <%= text_area_tag (:description) %>   
+       <div class="row right">
+     		<%= submit_tag ("Reportar") %>
+   </div>
+    <% end %>
+
+     
+     
