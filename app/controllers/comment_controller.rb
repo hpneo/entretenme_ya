@@ -13,6 +13,7 @@ class CommentController < ApplicationController
 			@comment.save
 			@link = '/contents/' + @content_id
 			redirect_to @link
+
 		else
 			redirect_to '/home'
 		end
@@ -21,7 +22,7 @@ class CommentController < ApplicationController
 	def list
 		@content_id = params[:content]
 		@comments = Comment.where(content_id: @content_id)
-		#rompetelitas estuvo aqui
+
 	end
 
 end

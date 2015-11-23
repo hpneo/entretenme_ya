@@ -1,0 +1,18 @@
+<h4 class="header light red-text text-lighten-2">Reporte de averia</h4>
+
+ <%= form_tag("/report/create", method: "post") do %>
+    	<h5 class="header col s12 light">
+    	<h5 class="header col s12 light">
+    		<p>Razon</p>
+    		<%= text_area_tag(:reason) %>
+    		<p>Descripcion</p>
+    		<%= text_area_tag(:description) %>
+    		<p>¿Considera que el error es critico?</p>
+        <%= text_area_tag (:reports_type) %>   
+       <div class="row right">
+     		<%= submit_tag ("Reportar") %>
+   </div>
+    <% end %>
+
+     
+     

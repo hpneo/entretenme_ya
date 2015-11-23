@@ -52,4 +52,5 @@ gem 'giantbomb'
 gem 'themoviedb'
 
 gem 'suggestor'
+gem 'activeadmin', github: 'activeadmin'
 gem 'thin'
