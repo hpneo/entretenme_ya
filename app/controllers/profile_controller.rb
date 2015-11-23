@@ -33,11 +33,19 @@ class ProfileController < ApplicationController
 	def update
 		@id = params[:id]
 		@email = params[:email]
-		@user = User.find(@id)
-		@user.email = @email;
-		@user.save
+    @password = params[:password]
+    @repassword = params[:repassword]
+		
+    if(@password == @repassword)
+      @user = User.find(@id)
+		  @user.email = @email;
+      @user.encrypted_password = BCrypt::Password.create(@password)
+		  @user.save
+      redirect_to "/profile/show/#{@id}"
+    else
+      redirect_to "/profile/edit/#{@id}"
+    end
 
-    redirect_to "/profile/show/#{@id}"
 	end
 
   def contents
